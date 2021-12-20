@@ -1,0 +1,37 @@
+html{
+    height: 100vh;
+}
+
+body{
+    color: #ffff;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+a{
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+img{
+    width: 140px;
+    height: 140px;
+    padding: 4px;
+}
+
+.contenedorFormAdmin{
+    width: 100%;
+    height: 100vh;
+}
+
+input.formulario:invalid {
+    background-color: #ffdddd;
+  }
+
+  input.formulario:valid {
+    background-color: #ddffdd;
+  }
+  input.formulario:required:invalid {
+    border-color: #C00000;
+  }
+  input.formulario:required:valid {
+    border-color: #136f00;
+  }
