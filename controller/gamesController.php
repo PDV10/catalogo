@@ -32,8 +32,8 @@
                     
                 $nombre = $_REQUEST['nombre'];
                 $compañia = $_REQUEST['compañia'];
-                $compatibilidad = $_REQUEST['nombre'];
-                $lanzamiento = $_REQUEST['nombre'];
+                $compatibilidad = $_REQUEST['compatibilidad'];
+                $lanzamiento = $_REQUEST['lanzamiento'];
                 $trailer = $_REQUEST['trailer'];
                 $categorias = $_REQUEST['categorias'];
 
@@ -56,8 +56,9 @@
 
         function showCardGame($id){
            $game = $this->model->GameById($id);
-           
+        
            if(!empty($game)){
+            
                $this->view->showCardGame($game);
            }else{
                 header("Location:" . BASE_URL);

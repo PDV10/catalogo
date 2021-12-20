@@ -55,9 +55,9 @@
 
         function GameById($id){
             $query = $this->db->prepare(
-           'SELECT j.*,c.nombre AS categoria
+           'SELECT j.*, c.nombre AS categoria
             FROM juegos j
-            JOIN categorias c ON j.id = c.id_categoria
+            JOIN categorias c ON j.id_categoria_fk = c.id_categoria
             WHERE j.id = ?');
             $query->execute([$id]);
             return $query->fetchAll(PDO::FETCH_OBJ);
