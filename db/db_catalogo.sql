@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-12-2021 a las 01:59:51
+-- Tiempo de generación: 20-12-2021 a las 02:25:22
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.6
 
@@ -66,8 +66,8 @@ CREATE TABLE `juegos` (
 
 INSERT INTO `juegos` (`id`, `nombre`, `lanzamiento`, `compania`, `compatibilidad`, `trailer`, `imagen`, `id_categoria_fk`) VALUES
 (7, 'League Of Legend', '21-08-2012', 'Riot Games', 'Pc', 'https://www.youtube.com/embed/7C-JdQmK39Q', 'img/61bfbd545cbc3.jpg', 9),
-(8, 'Counter Strike Global Offensive ', 'Valve', 'Counter Strike Global Offensive ', 'Counter Strike Global Offensive ', '-', 'img/61bfbe64f0cff.jpg', 6),
-(16, 'FIFA 22', 'FIFA 22', 'EA SPORTS', 'FIFA 22', 'https://www.youtube.com/embed/o1igaMv46SY', 'img/61bfcf3f00a6e.jpg', 7);
+(8, 'Counter Strike Global Offensive ', '29-08-2016', 'Valve', 'Pc', 'https://www.youtube.com/embed/edYCtaNueQY', 'img/61bfbe64f0cff.jpg', 6),
+(16, 'FIFA 22', '21-09-2021', 'EA SPORTS', 'Pc,X-Box,Play Station', 'https://www.youtube.com/embed/o1igaMv46SY', 'img/61bfcf3f00a6e.jpg', 7);
 
 -- --------------------------------------------------------
 
@@ -126,7 +126,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `juegos`
 --
 ALTER TABLE `juegos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `user`
